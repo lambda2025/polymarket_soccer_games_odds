@@ -53,7 +53,7 @@ cd D:\path\to\project_poly
 
 脚本会自动读取 Windows 系统代理（“设置 → 网络和 Internet → 代理”里配置的地址，Clash、V2Ray 等工具通常就是它），并把该代理同时用于 Gamma API 和 CLOB WebSocket；读不到时退回环境变量 `HTTPS_PROXY` / `HTTP_PROXY`，再退回直连。
 
-在本机实测：
+实测结果：
 
 - `https://gamma-api.polymarket.com` 直连可用；
 - `wss://ws-subscriptions-clob.polymarket.com` 直连会超时，**必须走本地代理**（当前系统代理为 `http://127.0.0.1:7897`）。
