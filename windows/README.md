@@ -14,7 +14,7 @@ py -3 -m venv .venv
 .\.venv\Scripts\python.exe -m pip install -r requirements.txt
 ```
 
-依赖只有 `requests` 和 `websocket-client`。**本机已经完成上述安装**（`.venv` 已存在），可直接跳到下面的运行步骤；换电脑或删除 `.venv` 后才需要重新执行。
+依赖只有 `requests` 和 `websocket-client`。若当前目录中已创建过 `.venv`，可跳过安装步骤，直接进入下面的运行步骤；换电脑或删除 `.venv` 后，需要重新执行上述命令。
 
 后续命令都直接调用 `.venv` 里的解释器，因此不需要先激活虚拟环境。若确实要激活，PowerShell 用 `.\.venv\Scripts\Activate.ps1`（若提示禁止运行脚本，先在当前窗口执行 `Set-ExecutionPolicy -Scope Process Bypass`），命令提示符用 `.venv\Scripts\activate.bat`。
 
